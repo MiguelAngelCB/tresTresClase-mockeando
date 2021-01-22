@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      Blank
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <button ion-item (click)="localizar()">Localizar</button>
+  <ion-item>
+    {{ubicacion.lat}}
+  </ion-item>
+  <ion-item>
+    {{ubicacion.long}}
+  </ion-item>
+  <button ion-item (click)="hacerFotos()">Foto</button>
+  <ion-item *ngIf="path">
+    <ion-img src="{{path}}"></ion-img>
+  </ion-item>
+</ion-content>
