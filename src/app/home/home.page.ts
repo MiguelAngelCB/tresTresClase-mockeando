@@ -10,7 +10,7 @@ import { Camera,CameraOptions } from '@ionic-native/camera/ngx';
 })
 export class HomePage {
   uno:Geoposition;
-  ubicacion = { lat: 0, long: 0 };
+  ubicacion = { lat: 1, long: 0 };
   path:string;
   //En este proyecto ya tenemos instalado el geolocation
   constructor(
